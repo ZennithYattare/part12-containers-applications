@@ -1,0 +1,26 @@
+@baseUrl=http://localhost:3000/todos/
+@id=674982ba5a41b5f0e8c1c18d
+
+###
+# GET todos
+GET {{baseUrl}}
+Content-Type: application/json
+
+###
+# POST a new todo
+POST {{baseUrl}}    
+Content-Type: application/json
+
+{
+    "text": "Learning docker",
+    "done": false
+}
+
+###
+PUT {{baseUrl}}/{{id}}
+Content-Type: application/json
+
+{
+    "text": "Learn about lock & lock containers",
+    "done": false
+}
