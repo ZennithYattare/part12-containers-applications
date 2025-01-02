@@ -1,0 +1,6 @@
+@baseUrl=http://localhost:3000/statistics/
+
+###
+# GET todos statistics
+GET {{baseUrl}}
+Content-Type: application/json
