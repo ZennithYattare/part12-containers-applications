@@ -62,3 +62,4 @@ typings/
 
 # local filesystem db mapped into container
 /mongo_data
+/redis_data
