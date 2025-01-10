@@ -11,4 +11,7 @@ export default defineConfig({
     environment: 'jsdom',
     exclude: [...configDefaults.exclude, 'node_modules/**'],
   },
+  server: {
+    watch: { usePolling: true },
+  },
 })
