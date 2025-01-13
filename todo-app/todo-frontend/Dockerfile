@@ -4,10 +4,6 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-# Set environment variable for backend URL
-ARG VITE_BACKEND_URL
-ENV VITE_BACKEND_URL=${VITE_BACKEND_URL}
-
 RUN npm ci
 
 # New stage for running tests
